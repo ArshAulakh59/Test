@@ -47,16 +47,4 @@ class UserInterface: NSObject {
 		UIGraphicsEndImageContext()
 		return image
 	}
-	
-	//MARK: Downscale Image
-	func imageResize (imageObj:UIImage, sizeChange:CGSize)-> UIImage {
-		let hasAlpha = true
-		let scale: CGFloat = UIScreen.mainScreen().scale
-		
-		UIGraphicsBeginImageContextWithOptions(sizeChange, !hasAlpha, scale)
-		imageObj.drawInRect(CGRect(origin: CGPointZero, size: sizeChange))
-		
-		let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
-		return scaledImage
-	}
 }
