@@ -28,19 +28,6 @@ class UserInterface: NSObject {
 		}
 	}
 	
-	func setCustomViewBarButton(isLeftButton: Bool, image: UIImage, selector: Selector, target:UIViewController) {
-		var btn = UIButton(frame: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
-		btn.setImage(image, forState: .Normal)
-		btn.addTarget(target, action: selector, forControlEvents: .TouchUpInside)
-		let barbuttonItem = UIBarButtonItem(customView: btn)
-		if isLeftButton {
-			target.navigationItem.leftBarButtonItem = barbuttonItem
-		} else {
-			target.navigationItem.rightBarButtonItem = barbuttonItem
-		}
-	}
-	
-	//MARK: Configure Back Button
 	func setCustomBackButton(selector: Selector, target: AnyObject) {
 		let backImage = UIImage(named: "icn_back") as UIImage!
 		var btn = UIButton(frame: CGRect(x: 0, y: 0, width: backImage.size.width, height: backImage.size.height))
