@@ -10,7 +10,6 @@ import UIKit
 
 class ListController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
-	
 	let imageCellIdentifier = "ListTableImageCell"
 	let itemCellIdentifier = "ListTableItemCell"
 	let headerIdentifier = "ListTableHeaderView"

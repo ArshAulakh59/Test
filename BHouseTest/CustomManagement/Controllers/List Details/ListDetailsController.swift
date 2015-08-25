@@ -12,7 +12,6 @@ class ListDetailsController: UIViewController {
 	@IBOutlet weak var placeholderImageImageView: UIImageView!
 	@IBOutlet weak var descriptionLabel: UILabel!
 	@IBOutlet weak var tableView: UITableView!
-	
 	var sourceCell: ListTableImageCell!
 	let itemCellIdentifier = "ListTableItemCell"
 	let headerIdentifier = "ListTableHeaderView"

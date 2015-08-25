@@ -43,8 +43,8 @@
                                     </variation>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="LOCATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-Z9-qFF">
-                                    <rect key="frame" x="77" y="18.5" width="45.5" height="13.5"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                    <rect key="frame" x="74.5" y="18.5" width="51" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -70,8 +70,8 @@
                             <rect key="frame" x="200" y="0.0" width="200" height="34"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="TIMING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPv-cJ-iKh">
-                                    <rect key="frame" x="85" y="18.5" width="31" height="13.5"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                    <rect key="frame" x="82.5" y="18" width="36" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -139,8 +139,8 @@
                                     </variation>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="NOTIFICATIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dUG-oL-drI">
-                                    <rect key="frame" x="66" y="18.5" width="67" height="13.5"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                    <rect key="frame" x="61" y="18" width="77" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -194,7 +194,7 @@
                         </mask>
                     </variation>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="104" sectionHeaderHeight="21" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-WJ-xxh">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="52" sectionHeaderHeight="21" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-WJ-xxh">
                     <rect key="frame" x="0.0" y="34" width="600" height="566"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
