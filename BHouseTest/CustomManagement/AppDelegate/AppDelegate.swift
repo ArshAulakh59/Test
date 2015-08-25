@@ -14,20 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
-		applyGlobalConfigurations()
 		manuallyConfigureWindow()
 		return true
 	}
 	
-	func applyGlobalConfigurations() {
-		var appearance = UINavigationBar.appearance()
-		if UINavigationBar.instancesRespondToSelector(Selector("setBackIndicatorImage:")) {
-			appearance.backIndicatorImage = UIImage(named: "icn_back")
-			appearance.backIndicatorTransitionMaskImage = UIImage(named: "icn_back")
-		}
-	}
-	
-	//MARK: Confiure Window Manually
+	//MARK: Configure Window Manually
 	func manuallyConfigureWindow() {
 		window = UIWindow(frame: UIScreen.mainScreen().bounds)
 		window?.backgroundColor = UIColor(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
@@ -37,9 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	//MARK: Setup Initial Controller
 	func setupInitialController() {
-		var navController = NavigationController(nibName: "NavigationController", bundle: NSBundle.mainBundle())
 		var listController = ListController(nibName: "ListController", bundle: NSBundle.mainBundle())
-		navController.setViewControllers([listController], animated: false)
+		var navController = UINavigationController(rootViewController: listController)
+		UserInterface().configureNavigationController(navController)
 		window?.rootViewController = navController
 	}
 }

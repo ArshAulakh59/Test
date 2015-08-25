@@ -26,8 +26,7 @@ extension ListController {
 	
 	func configureUI() {
 		title = "Awesome List View"
-		var logButton : UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "icn_settings"), style: .Plain, target: self, action: Selector("ShowSettings"))
-		self.navigationItem.rightBarButtonItem = logButton
+		UserInterface().setCustomBarButton(isLeftButton: false, image: UIImage(named: "icn_settings")!, selector: Selector("ShowSettings"), target: self)
 	}
 	
 	func configureTable() {
@@ -138,10 +137,7 @@ extension ListController {
 	func ShowSettings() {
 		let settingsObject = SettingsController(nibName: "SettingsController", bundle: NSBundle.mainBundle())
 		let navController = UINavigationController(rootViewController: settingsObject)
-		navController.navigationBar.translucent = false
-		navController.navigationBar.tintColor = redColor
-		navController.navigationBar.backgroundColor = grayColor
-		navController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: textColor, NSFontAttributeName: navigationFont!]
+		UserInterface().configureNavigationController(navController)
 		presentViewController(navController, animated: true) { () -> Void in
 		}
 	}

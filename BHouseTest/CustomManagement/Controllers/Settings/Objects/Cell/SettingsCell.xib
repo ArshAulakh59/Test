@@ -26,10 +26,11 @@
                     <constraint firstAttribute="centerY" secondItem="QZf-Gf-8E5" secondAttribute="centerY" id="xFP-7t-cFe"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="settingNameLabel" destination="QZf-Gf-8E5" id="Xds-gr-IRt"/>
             </connections>
+            <point key="canvasLocation" x="92" y="303.5"/>
         </tableViewCell>
     </objects>
 </document>

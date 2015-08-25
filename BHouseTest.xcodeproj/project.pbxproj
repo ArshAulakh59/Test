@@ -21,8 +21,6 @@
 		E9E3DFF71B8A539400BF4E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3DFF41B8A539400BF4E4E /* AppDelegate.swift */; };
 		E9E3DFFA1B8A53D000BF4E4E /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3DFF81B8A53D000BF4E4E /* ListController.swift */; };
 		E9E3DFFB1B8A53D000BF4E4E /* ListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E3DFF91B8A53D000BF4E4E /* ListController.xib */; };
-		E9E3DFFF1B8A578A00BF4E4E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3DFFD1B8A578A00BF4E4E /* NavigationController.swift */; };
-		E9E3E0001B8A578A00BF4E4E /* NavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E3DFFE1B8A578A00BF4E4E /* NavigationController.xib */; };
 		E9E3E0051B8A693300BF4E4E /* ListTableImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E0031B8A693300BF4E4E /* ListTableImageCell.swift */; };
 		E9E3E0061B8A693300BF4E4E /* ListTableImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E3E0041B8A693300BF4E4E /* ListTableImageCell.xib */; };
 		E9E3E0081B8A6B9100BF4E4E /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E0071B8A6B9100BF4E4E /* ListHeaderView.swift */; };
@@ -64,8 +62,6 @@
 		E9E3DFF41B8A539400BF4E4E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E3DFF81B8A53D000BF4E4E /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		E9E3DFF91B8A53D000BF4E4E /* ListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListController.xib; sourceTree = "<group>"; };
-		E9E3DFFD1B8A578A00BF4E4E /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Navigation/NavigationController.swift; sourceTree = "<group>"; };
-		E9E3DFFE1B8A578A00BF4E4E /* NavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavigationController.xib; path = Navigation/NavigationController.xib; sourceTree = "<group>"; };
 		E9E3E0031B8A693300BF4E4E /* ListTableImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableImageCell.swift; path = CustomObjects/Cell/ListTableImageCell.swift; sourceTree = "<group>"; };
 		E9E3E0041B8A693300BF4E4E /* ListTableImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListTableImageCell.xib; path = CustomObjects/Cell/ListTableImageCell.xib; sourceTree = "<group>"; };
 		E9E3E0071B8A6B9100BF4E4E /* ListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListHeaderView.swift; path = CustomObjects/Header/ListHeaderView.swift; sourceTree = "<group>"; };
@@ -236,7 +232,6 @@
 		E9E3DFF51B8A539400BF4E4E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9E3DFFC1B8A576200BF4E4E /* Navigation */,
 				E9E3DFF61B8A539400BF4E4E /* List */,
 				E9E3E0111B8A78B100BF4E4E /* List Detail */,
 				E9E3E01D1B8A947C00BF4E4E /* Settings */,
@@ -254,15 +249,6 @@
 				E9E3E0011B8A68F000BF4E4E /* Custom Objects */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		E9E3DFFC1B8A576200BF4E4E /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				E9E3DFFD1B8A578A00BF4E4E /* NavigationController.swift */,
-				E9E3DFFE1B8A578A00BF4E4E /* NavigationController.xib */,
-			);
-			name = Navigation;
 			sourceTree = "<group>";
 		};
 		E9E3E0011B8A68F000BF4E4E /* Custom Objects */ = {
@@ -419,7 +405,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E3E0001B8A578A00BF4E4E /* NavigationController.xib in Resources */,
 				E9E3E0101B8A751C00BF4E4E /* ListTableItemCell.xib in Resources */,
 				E92FCF3D1B8AE87C0083261A /* SettingsCell.xib in Resources */,
 				E9E3E01C1B8A8ACA00BF4E4E /* ListDetailsController.xib in Resources */,
@@ -481,7 +466,6 @@
 			files = (
 				E92FCF431B8AECE00083261A /* SettingsDetailController.swift in Sources */,
 				E9E3DFF71B8A539400BF4E4E /* AppDelegate.swift in Sources */,
-				E9E3DFFF1B8A578A00BF4E4E /* NavigationController.swift in Sources */,
 				E92FCF3C1B8AE87C0083261A /* SettingsCell.swift in Sources */,
 				E9E3E0081B8A6B9100BF4E4E /* ListHeaderView.swift in Sources */,
 				E9E3E01B1B8A8ACA00BF4E4E /* ListDetailsController.swift in Sources */,

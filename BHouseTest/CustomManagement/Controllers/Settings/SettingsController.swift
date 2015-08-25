@@ -23,8 +23,7 @@ extension SettingsController {
 	
 	func configureUI() {
 		title = "Settings"
-		var logButton : UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "icn_close"), style: .Plain, target: self, action: Selector("CloseSettings"))
-		self.navigationItem.leftBarButtonItem = logButton
+		UserInterface().setCustomBarButton(isLeftButton: true, image: UIImage(named: "icn_close")!, selector: Selector("CloseSettings"), target: self)
 	}
 	
 	func configureTable() {
